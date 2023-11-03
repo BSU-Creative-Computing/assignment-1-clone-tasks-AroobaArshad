@@ -1,0 +1,116 @@
+/* Removing default margin of the webpage */
+* {
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+    font-family: cursive;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Applying grid layout to the container element */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Specifying three columns */
+    grid-template-rows: 1fr 1fr; /* Specifying two rows */
+    grid-row-gap: 0;
+}
+
+/* Adding padding-bottom to the main section */
+.main {
+    padding-bottom: 20px;
+}
+
+/* Setting dimension for the svg logo */
+.SVG {
+    margin: 8px;
+    padding: 8px;
+    width: 70px;
+    height: 70px;
+}
+
+/* Specifying margins for the paragraphs */
+.para {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    line-height: 1.7; /* Adding line-height */
+}
+
+/* Styling the footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    margin: auto;
+}
+
+
+/* ADDING MEDIA QUERIES TO MAKE THE WEBPAGE RESPONSIVE */
+@media screen and (max-width: 800px) {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .SVG {
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .SVG {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .SVG {
+        height: 65px;
+        width: 65px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .main {
+        background-color: #fff;
+        width: 75%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        padding-left: 0;
+    }    
+
+    footer {
+        width: 72.6%;
+    }
+
+    body {
+        background-color: #ebe9e9;
+    }
+    
+}
