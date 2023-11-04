@@ -19,6 +19,7 @@ and carries the variable $bg-color for the background color*/
     background-color: $bg-color;
     &:hover {
         background-color: nth($Colors, 6); /* Specifying the hover color */
+        cursor: pointer;
     }
     width: 100%;
     height: 35px;
@@ -34,6 +35,7 @@ and carries two variables for the circle size and color respectively*/
     border-radius: 50%;
     &:hover {
         background-color: nth($Colors, 6);
+        cursor: pointer;
     }
 }
 

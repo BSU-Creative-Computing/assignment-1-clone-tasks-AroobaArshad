@@ -63,6 +63,7 @@ styles on all the lines and changing the color only */
 }
 .firstline:hover {
   background-color: #444; /* Specifying the hover color */
+  cursor: pointer;
 }
 
 .secondline {
@@ -72,6 +73,7 @@ styles on all the lines and changing the color only */
 }
 .secondline:hover {
   background-color: #444; /* Specifying the hover color */
+  cursor: pointer;
 }
 
 .thirdline {
@@ -81,6 +83,7 @@ styles on all the lines and changing the color only */
 }
 .thirdline:hover {
   background-color: #444; /* Specifying the hover color */
+  cursor: pointer;
 }
 
 .fourthline {
@@ -90,6 +93,7 @@ styles on all the lines and changing the color only */
 }
 .fourthline:hover {
   background-color: #444; /* Specifying the hover color */
+  cursor: pointer;
 }
 
 /* Using the mixin created before to add the same
@@ -106,6 +110,7 @@ styles on all the circles and changing the color and size only */
 }
 .circle1:hover {
   background-color: #444;
+  cursor: pointer;
 }
 @media screen and (max-width: 621px) {
   .circle1 {
@@ -125,6 +130,7 @@ styles on all the circles and changing the color and size only */
 }
 .circle2:hover {
   background-color: #444;
+  cursor: pointer;
 }
 @media screen and (max-width: 621px) {
   .circle2 {
@@ -144,6 +150,7 @@ styles on all the circles and changing the color and size only */
 }
 .circle3:hover {
   background-color: #444;
+  cursor: pointer;
 }
 @media screen and (max-width: 621px) {
   .circle3 {
@@ -163,6 +170,7 @@ styles on all the circles and changing the color and size only */
 }
 .circle4:hover {
   background-color: #444;
+  cursor: pointer;
 }
 @media screen and (max-width: 621px) {
   .circle4 {
