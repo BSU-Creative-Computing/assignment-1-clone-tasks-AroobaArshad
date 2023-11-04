@@ -1,0 +1,179 @@
+/* Making a list of colors to use throughout the styling */
+/* Removing default margin around the body */
+* {
+  margin: 0;
+}
+
+/* MIXIN THAT DEALS WITH MEDIA QUERIES*/
+/* A mixin that holds the general styling for the rows 
+and carries the variable $bg-color for the background color*/
+/* A mixin that contains the common styles for the four circles 
+and carries two variables for the circle size and color respectively*/
+/**/
+/* Styling the header */
+header {
+  background-color: #8ccff7;
+  max-width: 100%;
+  /* Applying flex layout to make it responsive */
+  display: flex;
+  justify-content: center; /* Aligning the image at the centre */
+}
+
+/* Setting background color for the body */
+body {
+  background-color: #e4eff5;
+}
+
+/* Making sure the image is displayed properly */
+img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+}
+
+/* Setting the background color for the main container 
+and also styling the circles container within it */
+.container {
+  background-color: #e4eff5;
+  padding-top: 50px;
+  /* Applying flex layout to the circles div*/
+}
+.container .circles {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* Including breakpoint at 621px to make the circles
+  stack vertically by adding flex-direction: column*/
+}
+@media screen and (max-width: 621px) {
+  .container .circles {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+/* Using the mixin created before to add the same
+styles on all the lines and changing the color only */
+.firstline {
+  background-color: #4e89ae;
+  width: 100%;
+  height: 35px;
+}
+.firstline:hover {
+  background-color: #444; /* Specifying the hover color */
+}
+
+.secondline {
+  background-color: #43658b;
+  width: 100%;
+  height: 35px;
+}
+.secondline:hover {
+  background-color: #444; /* Specifying the hover color */
+}
+
+.thirdline {
+  background-color: #ed6663;
+  width: 100%;
+  height: 35px;
+}
+.thirdline:hover {
+  background-color: #444; /* Specifying the hover color */
+}
+
+.fourthline {
+  background-color: #ffa372;
+  width: 100%;
+  height: 35px;
+}
+.fourthline:hover {
+  background-color: #444; /* Specifying the hover color */
+}
+
+/* Using the mixin created before to add the same
+styles on all the circles and changing the color and size only */
+.circle1 {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-right: 10px;
+  background-color: #4e89ae;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* Adding breakpoints to adjust the margins */
+}
+.circle1:hover {
+  background-color: #444;
+}
+@media screen and (max-width: 621px) {
+  .circle1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+.circle2 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-right: 10px;
+  background-color: #43658b;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.circle2:hover {
+  background-color: #444;
+}
+@media screen and (max-width: 621px) {
+  .circle2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.circle3 {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  margin-right: 10px;
+  background-color: #ed6663;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.circle3:hover {
+  background-color: #444;
+}
+@media screen and (max-width: 621px) {
+  .circle3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.circle4 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: 10px;
+  background-color: #ffa372;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.circle4:hover {
+  background-color: #444;
+}
+@media screen and (max-width: 621px) {
+  .circle4 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+/* Styling the footer. Giving specific height to it. */
+footer {
+  background-color: #8ccff7;
+  height: 50px;
+  width: 100%;
+}/*# sourceMappingURL=Task3.css.map */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking the stylesheet that is generated from the SCSS File -->
+    <link rel="stylesheet" href="Task3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Task 3</title>
+</head>
+
+<!-- Creating a header and adding image -->
+<header>
+    <!-- Using picture element to add three images of different sizes 
+    based on the width of the viewport. Using the media attribute. -->
+    <picture>
+        <source srcset="https://via.placeholder.com/200" media="(max-width: 480px)">
+        <source srcset="https://via.placeholder.com/300" media="(max-width: 800px)">
+        <img src="https://via.placeholder.com/400" alt="Bees">
+    </picture>
+</header>
+
+<body>
+    <!-- Main container that holds both the rows and circles -->
+    <div class="container">
+        <!-- Sub-div that contains rows/lines with different classes -->
+        <div class="lines">
+            <div class="firstline"></div>
+            <div class="secondline"></div>
+            <div class="thirdline"></div>
+            <div class="fourthline"></div>
+        </div>
+           
+        <!-- Sub-div that contains circles with different classes -->
+        <div class="circles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <!-- Empty Footer with background Color -->
+</footer>
+
+</html>
