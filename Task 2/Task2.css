@@ -1,0 +1,267 @@
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
+
+/* Setting the font-family for the whole page and removing default margin */
+* {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+}
+
+/* Styling the nav bar */
+nav {
+    /* Applying flex layout */
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E90FF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Making the heading inline */
+.heading {
+    margin: auto;
+    display: inline;
+    color: white;
+    font-size: 20px;
+}
+
+/* Specifying dimensions and margins for the search entry */
+.search {
+    padding: 9px;
+    height: 20px;
+    width: 180px;
+    border: none;
+    margin-left: 28%;
+    margin-right: 18%;
+}
+
+a {
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+}
+
+/* Hiding menu for wider viewports */
+.menu {
+    display: none;
+}
+
+/* Setting background color of the webpage */
+body {
+    background-color: rgb(231, 229, 229);
+}
+
+/* Adding flex on the main container */
+.Main {
+    margin-left: 14%;
+    margin-right: 14%;
+    display: flex;
+}
+
+/* Styling and adding flex to the main content box */
+.First {
+    border: 1px solid rgb(223, 222, 222);
+    box-shadow: 3px 3px 3px rgb(223, 222, 222);
+    padding: 4px;
+    flex: 3;
+    height: 50%;
+    margin: 6px;
+    background-color: white;
+}
+
+/* Adding flex to the class that holds the smaller 
+content boxes in a group */
+.flexx {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    max-height: auto;
+}
+
+.gunmen {
+    width: 100%;
+    max-height: 700px;
+}
+
+/* Making the divs that contain two groups of content 
+to have a flex-direction of row */
+.Flex1, .Flex2 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+/* Styling the heading in First section */
+.First h2 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+
+/* Styling the paragraph in First section */
+.First p {
+    font-size: 14px;
+    color: rgb(94, 93, 93);
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5;
+}
+
+/* Setting the borders and box-shadows of the smaller 
+content boxes and specifying their margins */
+.Second, .Third, .Fourth, .Fifth {
+    margin: 6px;
+    border: 1px solid rgb(223, 222, 222);
+    box-shadow: 3px 3px 3px rgb(223, 222, 222);
+    padding: 12px;
+    background-color: white;
+}
+
+/* Styling all the headings present in the smaller content boxes */
+.Second h2, .Third h2, .Fourth h2, .Fifth h2 {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* Styling all the paragraphs present in the smaller content boxes */
+.Second p, .Third p, .Fourth p, .Fifth p {
+    margin-top: 8px;
+    color: rgb(94, 93, 93);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Styling the five buttons */
+.btn1, .btn2, .btn3, .btn4, .btn5 {
+    font-size: 11px;
+    padding: 5px 11px;
+    background-color: #1B98FF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    float: right;
+}
+
+.btn1 {
+    margin: 30px;
+}
+
+.btn2, .btn3, .btn4, .btn5 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+/* Styling the footer */
+footer {
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    margin-top: 10px;
+}
+
+/* ************************************************************* */
+/* ADDING MULTIPLE MEDIA QUERIES TO MAKE THE WEBPAGE RESPONSIVE */
+/* ************************************************************ */
+
+/* Media querie when the screen is less than 1281px */
+@media screen and (max-width: 1281px) {
+    .Main {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+}
+
+/* Media querie when the screen is less than 1025px */
+@media screen and (max-width: 1025px) {
+    /* Adding flex-direction column */
+    .flexx {
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .Flex1, .Flex2 {
+        flex-direction: column;
+    }
+    
+    /* Adjusting the margins */
+    .search {
+        margin-right: 12%;
+        margin-left: 22%;
+    }
+}
+
+/* Media querie when the screen is less than 801px and greater than 482px */
+@media screen and (min-width: 482px) and (max-width: 801px) {
+    /* Removing flex and adding display block */
+    .Main {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        display: block;
+    }
+
+    .First {
+        margin: 12px;
+        padding-bottom: 80px;
+    }
+
+    /* Hiding the nav elements */
+    .search, a {
+        display: none;
+    }
+
+    /* Displaying the menu item */
+    .menu {
+        display: inline-flex;
+        margin-left: 68%;
+    }
+
+    .heading {
+        margin-right: 5%;
+    }
+
+    .flexx {
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Flex1, .Flex2 {
+        flex-direction: row;
+    }
+
+    .Second, .Third, .Fourth, .Fifth {
+        margin: 12px;
+    }
+}
+
+/* Media querie when the screen is less than 481px */
+@media screen and (max-width: 481px) {
+    /* Making everything a block level element */
+    .Main, .flexx, .Flex1, .Flex2 {
+        display: block;
+    }
+
+    .search, a {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+        margin-left: 60%;
+    }
+
+    .heading{
+        margin-right: 5%;
+    }
+
+    .Second, .Third, .Fourth, .Fifth {
+        padding-bottom: 80px;
+    }
+}
